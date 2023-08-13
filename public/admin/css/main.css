@@ -1,0 +1,35 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+ }
+.menu-left{
+  display: block;
+  width: 150px;
+  background-color: rgb(214, 236, 236);
+  height: 900px;
+}
+.menu-left a{
+  text-decoration: none;
+  color: black;
+  padding: 30px;
+  font-weight: 700;
+}
+.menu-left li{
+  padding-top: 30px;
+}
+.nav li:hover{
+  background-color: #0d6efd;
+}
+.container-fluid form.form button.btn-success{
+  margin-top: 20px;
+  float: right;
+}
+.error {
+    color: red;
+    font-size: 14px;
+}
+.hide{
+    display: none;
+}
