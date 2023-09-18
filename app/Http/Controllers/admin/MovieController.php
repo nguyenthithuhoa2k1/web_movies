@@ -49,9 +49,9 @@ class MovieController extends Controller
             if(!empty($file)){
                 $fileName = $file->getClientOriginalName();
                 $movies->image = $fileName;
-                $file->storeAs('upload/movies_image', $fileName);
+                $file->storeAs('upload/movies_image', $fileName,'public');
                 // Storage::disk('local')->put('upload/movies_image/'.$fileName, 'Contents');
-                // Storage::setVisibility(' $fileName', 'private');
+                Storage::setVisibility(' $fileName', 'private');
             }
             $movies->title = $request->title;
             $movies->descriptions = $request->descriptions;

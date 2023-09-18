@@ -191,10 +191,9 @@
                                             class="d-flex flex-row align-items-center">
                                             @csrf
                                             <input type="hidden" class="comment_id" value="${data.id}">
-                                            <button type="submit" class=" btn btn-sm me-2 btn-outline-primary ">Like</button>
+                                            <button type="submit" class=" btn btn-sm me-2 btn-        class="d-flex flex-row align-items-center">outline-primary ">Like</button>
                                         </form>
                                         <form class="dislike-comment" method="post" action="{{ url('/movie/dislike') }}"
-                                            class="d-flex flex-row align-items-center">
                                             @csrf
                                             <input type="hidden" class="comment_id" value="${data.id}">
                                             <button type="submit" class=" dislike btn btn-sm me-2 btn-outline-primary ">Dislike</button>
